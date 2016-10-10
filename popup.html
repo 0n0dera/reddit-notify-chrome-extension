@@ -2,14 +2,29 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Hello World in Backbone.js</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
+  <section id="sidebar">
+  	<input id="subreddit-input" placeholder="Enter a subreddit...">
+  	<div id="subreddit-list"></div>
+  </section>
 
-  <div id="container">Loading...</div>
+  <section id="details">
+  </section>
+
+  <!-- ********* -->
+  <!-- ********* -->
+  <!-- TEMPLATES -->
+  <!-- ********* -->
+  <!-- ********* -->
+  <script type="text/template" id="subreddit-template">
+  	<div class="subreddit-button">
+  		<%= subreddit %>
+  	</div>
+  </script>
 
   <script data-main="js/popup" src="tools/require.js"></script>
-  
+
 </body>
 </html>
